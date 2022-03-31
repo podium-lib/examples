@@ -1,0 +1,21 @@
+{
+  "name": "podium-csrf-prototype",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@podium/layout": "^4.6.108",
+    "@podium/podlet": "^4.4.61",
+    "body-parser": "^1.19.2",
+    "cookie-parser": "^1.4.6",
+    "csurf": "^1.11.0",
+    "express": "^4.17.3"
+  }
+}
