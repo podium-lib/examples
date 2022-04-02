@@ -1,5 +1,5 @@
-const express = require("express");
-const Layout = require("@podium/layout");
+import express from "express";
+import Layout from "@podium/layout";
 
 const layout = new Layout({
   name: "myLayout",

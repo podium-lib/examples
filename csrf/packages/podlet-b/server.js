@@ -1,8 +1,8 @@
-const express = require("express");
-const Podlet = require("@podium/podlet");
-const csrf = require("csurf");
-const cookieParser = require("cookie-parser");
-const bodyParser = require("body-parser");
+import express from "express";
+import Podlet from "@podium/podlet";
+import csrf from "csurf";
+import cookieParser from "cookie-parser";
+import bodyParser from "body-parser";
 
 const development = process.env.NODE_ENV !== "production";
 

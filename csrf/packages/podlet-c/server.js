@@ -1,5 +1,5 @@
-const express = require("express");
-const Podlet = require("@podium/podlet");
+import express from "express";
+import Podlet from "@podium/podlet";
 
 const development = process.env.NODE_ENV !== "production";
 
