@@ -17,7 +17,7 @@ const podlet = new Podlet({
 
 // Let document served by layout load assets cross domain
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:7001");
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:7000");
   res.setHeader("Access-Control-Allow-Methods", "GET");
   next();
 });
@@ -84,4 +84,6 @@ app.use((err, req, res, next) => {
   res.status(403).send("Forbidden");
 });
 
-app.listen(7200);
+app.listen(7200, () => {
+  console.log('Podlet running at http://localhost:7200/');
+});

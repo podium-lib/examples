@@ -17,7 +17,7 @@ const podlet = new Podlet({
 
 // Let document served by layout load assets cross domain
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:7001");
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:7000");
   res.setHeader("Access-Control-Allow-Methods", "GET");
   next();
 });
@@ -58,7 +58,7 @@ app.get(podlet.content(), (req, res) => {
               despite that we are giving the cookie a different name. If not
               the bodyparser will not pick out the token and hand it to
               validation :/
-    */
+  */
   const html = `
         <section>
             <form action="${url.href}/api/form" method="POST" id="a">
@@ -99,4 +99,6 @@ app.use((err, req, res, next) => {
   res.status(403).send("Forbidden");
 });
 
-app.listen(7100);
+app.listen(7100, () => {
+  console.log('Podlet running at http://localhost:7100/');
+});

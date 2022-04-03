@@ -14,7 +14,7 @@ const podlet = new Podlet({
 
 // Let document served by layout load assets cross domain
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:7001");
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:7000");
   res.setHeader("Access-Control-Allow-Methods", "GET");
   next();
 });
@@ -53,4 +53,6 @@ podlet.proxy({ target: "/api", name: "api" });
 app.use("/static", express.static("public"));
 podlet.js({ value: "/static/button.js", type: "esm" });
 
-app.listen(7300);
+app.listen(7300, () => {
+  console.log('Podlet running at http://localhost:7300/');
+});

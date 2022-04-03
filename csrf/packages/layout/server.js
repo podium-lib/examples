@@ -64,4 +64,6 @@ app.use((err, req, res, next) => {
   res.status(500).send("Internal error");
 });
 
-app.listen(7001);
+app.listen(7000, () => {
+  console.log('Layout running at http://localhost:7000/');
+});
