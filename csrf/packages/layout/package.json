@@ -7,7 +7,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "@podium/layout": "4.6.110",
+    "@podium/layout": "5.1.2",
     "express": "4.18.1"
   }
 }
