@@ -12,7 +12,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@podium/layout": "4.6.110",
+    "@podium/layout": "5.1.2",
     "@podium/podlet": "4.4.63",
     "body-parser": "1.20.0",
     "cookie-parser": "1.4.6",
